@@ -29,7 +29,7 @@ $wgMetaNamespace = "Awesome_Democracy";
 $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "demos-wiki.partiunion.org";
+$wgServer = "http://demos-wiki.partiunion.org";
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;

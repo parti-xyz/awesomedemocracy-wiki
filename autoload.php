@@ -722,6 +722,7 @@ $wgAutoloadLocalClasses = [
 	'LanguageKk' => __DIR__ . '/languages/classes/LanguageKk.php',
 	'LanguageKk_cyrl' => __DIR__ . '/languages/classes/LanguageKk_cyrl.php',
 	'LanguageKm' => __DIR__ . '/languages/classes/LanguageKm.php',
+	'LanguageKo' => __DIR__ . '/languages/classes/LanguageKo.php',
 	'LanguageKsh' => __DIR__ . '/languages/classes/LanguageKsh.php',
 	'LanguageKu' => __DIR__ . '/languages/classes/LanguageKu.php',
 	'LanguageKu_ku' => __DIR__ . '/languages/classes/LanguageKu_ku.php',

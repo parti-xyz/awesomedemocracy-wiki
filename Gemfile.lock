@@ -1,6 +1,6 @@
 GIT
-  remote: git@bitbucket.org:ufofactory/rack-legacy-phpcli.git
-  revision: 663ac4e0fd1ce6147f6ec0538147c5109d31f9e9
+  remote: git@github.com:parti-xyz/rack-legacy-phpcli.git
+  revision: a2e9f789f44f348265cf6c111dfd16b15b94bc91
   specs:
     rack-legacy-phpcli (0.0.1)
       childprocess

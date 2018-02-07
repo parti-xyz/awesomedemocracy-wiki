@@ -129,8 +129,9 @@ $wgGroupPermissions['bureaucrat']['userrights'] = true;
 # $wgVectorUseIconWatch = true;
 
 wfLoadSkin( 'Tweeki' );
-$wgDefaultSkin = "tweeki";
-$wgTweekiSkinUseAwesome = true;
+// $wgDefaultSkin = "tweeki";
+// $wgTweekiSkinUseAwesome = true;
+$wgDefaultSkin = "chameleon";
 
 # End of automatically generated settings.
 # Add more configuration options below.

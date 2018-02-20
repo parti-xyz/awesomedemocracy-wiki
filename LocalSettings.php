@@ -138,3 +138,29 @@ $wgDefaultSkin = "chameleon";
 
 # End of automatically generated settings.
 # Add more configuration options below.
+
+# Slack
+if (!empty($_SERVER["WG_SLACK_WEBHOOK_URL"])) {
+  require_once("$IP/extensions/SlackNotifications/SlackNotifications.php");
+  // Required. Your Slack incoming webhook URL. Read more from here: https://api.slack.com/incoming-webhooks
+  $wgSlackIncomingWebhookUrl = $_SERVER["WG_SLACK_WEBHOOK_URL"];
+  // Required. Name the message will appear to be sent from. Change this to whatever you wish it to be.
+  $wgSlackFromName = $wgSitename;
+  // URL into your MediaWiki installation with the trailing /.
+  $wgWikiUrl = $wgServer;
+  $wgServerEnd = substr($wgServer, strlen($wgServer) - 1);
+  if ($wgServerEnd != '/') {
+    $wgWikiUrl = $wgServer . '/';
+  }
+  // Wiki script name. Leave this to default one if you do not have URL rewriting enabled.
+  $wgWikiUrlEnding = "index.php?title=";
+  // What method will be used to send the data to Slack server. By default this is "curl" which only works if you have the curl extension enabled. This can be: "curl" or "file_get_contents". Default: "curl".
+  $wgSlackSendMethod = "curl";
+
+  // If this is true, pages will get additional links in the notification message (edit | delete | history).
+  $wgSlackIncludePageUrls = false;
+  // If this is true, users will get additional links in the notification message (block | groups | talk | contribs).
+  $wgSlackIncludeUserUrls = false;
+  // If this is true, all minor edits made to articles will not be submitted to Slack.
+  $wgSlackIgnoreMinorEdits = false;
+}

@@ -15,6 +15,20 @@ env["WG_SECRET_KEY"]= ??
 env["WG_UPGRADE_KEY"]= ??
 ```
 
+=== 개발 환경 설치 ===
+
+.powenv에 아래 값을 설정한다.
+
+```
+export WG_DB_HOST=xx
+export WG_DB_NAME=xx
+export WG_DB_USER=xx
+export WG_DB_PASS=xx
+export WG_SECRET_KEY=xx
+export WG_UPGRADE_KEY=xx
+export WG_SERVER_URL=http://demos-wiki.test
+```
+
 == MediaWiki ==
 
 MediaWiki is a free and open-source wiki software package written in PHP. It

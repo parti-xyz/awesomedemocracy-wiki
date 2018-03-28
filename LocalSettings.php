@@ -30,7 +30,7 @@ $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
 if (empty($_SERVER["WG_SERVER_URL"])) {
-  $wgServer = "http://demos-wiki.partiunion.org";
+  $wgServer = "http://demos.wiki";
 } else {
   $wgServer = $_SERVER["WG_SERVER_URL"];
 }
